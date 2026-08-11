@@ -139,7 +139,8 @@ function Player() {
   return (
     <>
      <div className="findInfo">
-  <form onSubmit={(e) => {
+ <p className="guide">for searching, enter your or another player friendship code</p>
+    <form onSubmit={(e) => {
     e.preventDefault()
     SearchUser(input)
     setPlayerId(input)
