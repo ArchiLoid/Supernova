@@ -64,7 +64,7 @@ Here you can explore:
 Our goal is not to recreate every feature of large analytics platforms, but to build a fast, clean, and accessible hero database that helps players quickly understand how a hero is played, where that hero performs best, and how successful that hero is in different situations.
 
 Supernova Stats is built for players who want straightforward, practical information that helps them learn, improve, and enjoy Dota 2 through a modern and easy-to-use interface.</p>
-     <button onClick={() => goTo("/heroes")}>Explore Heroes</button> 
+     <button className = "button_navigator" onClick={() => goTo("/heroes")}>Explore Heroes</button> 
       </div>
     </section>
 
@@ -85,7 +85,7 @@ Supernova Stats is built for players who want straightforward, practical informa
 
       Our goal is to make competitive Dota 2 statistics easy to explore while keeping the interface clean, fast, and enjoyable to use. The Leaderboard helps players track exceptional performances, discover new hero specialists, and better understand the current competitive environment.
     </p>
-     <button onClick={() => goTo("/leaderboard")}>Explore Leaderboard</button> 
+     <button className = "button_navigator" onClick={() => goTo("/leaderboard")}>Explore Leaderboard</button> 
   </div>
 </section>
 
@@ -109,7 +109,7 @@ Supernova Stats is built for players who want straightforward, practical informa
 
       This section is designed to help players quickly understand which items are currently effective, how often they are used, and how successful they are in real matches, all through a simple and modern interface.
     </p>
-     <button onClick={() => goTo("/items")}>Explore Items</button> 
+     <button className = "button_navigator" onClick={() => goTo("/items")}>Explore Items</button> 
   </div>
 </section>
 

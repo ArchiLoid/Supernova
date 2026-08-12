@@ -289,7 +289,7 @@ function Player() {
     matches.length === 0 ? ( 
       <p>The player hasn`t played matches</p>
     ):(
-      <button className="showMore" onClick={() => setShowAll(!showAll)}>Show More!</button>
+      <button className="showMore" onClick={() => setShowAll(!showAll)}>{showAll ? "Show Less" : "Show More"}</button>
     )
     )
   }
