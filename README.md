@@ -1,4 +1,4 @@
-STRATZ API
+Supernova
 
 The project uses the STRATZ GraphQL API.
 
