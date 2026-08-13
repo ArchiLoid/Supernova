@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
-import '../App.css'
-import ItemModal from "../components/ItemModal"
+import './Items.css'
+import ItemModal from "../../components/ItemModal"
+import ItemCard from "../../components/ItemCard/ItemCard"
 
     function Items(){
         const [ isModalOpen, setModalOpen] = useState(false)
@@ -30,7 +31,7 @@ import ItemModal from "../components/ItemModal"
 
                     const data = await response.json()
                     setItems(Object.values(data))
-                    console.log(data)
+                  
                   
 
                 }catch(err){
@@ -57,16 +58,7 @@ import ItemModal from "../components/ItemModal"
                 </>
         ) 
         
-        function ItemCard({item}){
-            return (
-                <>
-                <div onClick = {() => clickItem(item)}>
-                <img className = "item_img" alt = {`Image of ${item.dname}`}  src={`https://cdn.cloudflare.steamstatic.com${item.img}`} />
-                <h4>{item.dname}</h4>
-                </div>
-                </>
-            )
-        }
+        
     }
 
     export default Items

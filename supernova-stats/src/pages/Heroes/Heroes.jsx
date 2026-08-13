@@ -1,7 +1,8 @@
     import { useState,useEffect } from "react";    
-    import '../App.css'
-    import HeroModal from "../components/HeroModal";
-    import heroLore from "../data/heroLore";
+    import './Heroes.css' 
+    import HeroModal from "../../components/HeroModal";
+    import heroLore from "../../data/heroLore";
+    import HeroCard from "../../components/HeroCard/HeroCard";
     
     function Heroes(){
             const [heroes, setHeroes] = useState([])
@@ -104,21 +105,7 @@
   </>
 )
 
-    function HeroCard({ hero, heroOnClick}) {
-           const lore = heroLore[hero.id]
-           console.log(hero)
-
-        return (
-            <div className="strength_page" onClick = {() => heroOnClick(hero)}>
-                <img
-                    src={`https://cdn.cloudflare.steamstatic.com${hero.img}`}
-                    alt={hero.localized_name}
-                />
-                
-                <h3>{hero.localized_name}</h3>
-            </div>
-        )
-    }
+   
 }
 
     

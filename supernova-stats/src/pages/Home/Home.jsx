@@ -1,6 +1,7 @@
-import sunrise from "../assets/images/sunrise.png" 
-import SideBar from "../components/Sidebar"
+import sunrise from "../../assets/images/sunrise.png" 
+import SideBar from "../../components/Sidebar"
 import { useNavigate } from "react-router-dom"
+import './Home.css'
 
 function Home() {
 

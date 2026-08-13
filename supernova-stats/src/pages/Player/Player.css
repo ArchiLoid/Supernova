@@ -1,0 +1,257 @@
+
+
+.wins{
+  color: rgb(0, 206, 0);
+  font-size: 20px;
+  width: 70px;
+  padding: 16px 6px;
+}
+
+.total_games{
+  color: white;
+  font-size: 20px;
+  width: 70px;
+  padding: 16px 6px;
+}
+
+.red{
+  color: red;
+  font-size: 32px;
+  margin-top: 40px;
+  background: var(--card-bg-hover);
+   width: 120px;
+  height: 119px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(128, 0, 0, 0.774);
+}
+.winrateBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.green{
+  color: rgb(0, 255, 0);
+  font-size: 32px;
+  margin-top: 40px;
+  background: var(--card-bg-hover);
+   width: 120px;
+  height: 119px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 128, 0, 0.774);
+}
+.loses{
+  color: rgb(253, 0, 0);
+  font-size: 20px;
+  width: 70px;
+  padding: 16px 6px;
+}
+input{
+  width: 300px;
+  text-align: center;
+  height: 30px;
+  border-radius: 20px;
+}
+.findInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  gap: 10px;               
+  margin-top: 30px;
+}
+
+.playerName{
+  background: var(--card-bg);
+  width: 300px;
+ padding: 10px 10px;
+ border-radius: 20px;
+ margin-left: 30px;
+ text-align: center;
+}
+
+.playerNick{
+  margin: 0 auto;
+}
+.playerAvatar{
+  border-radius: 20px;
+}
+.playerInfo{
+  display: inline-flex;
+  gap: 100px;
+}
+.statsInf{
+  background: var(--card-bg);
+  width: 800px;
+   border-radius: 20px;
+   text-align: center;
+   
+}
+
+.gamesCount{
+   display: inline-flex;
+  gap: 5px;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px var(--fire-glow);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  background-color: var(--card-bg-hover);
+  border-color: var(--primary);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6), 0 0 25px var(--fire-glow-hover);
+  transform: translateY(-2px);
+}
+
+.hero-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.hero-img {
+  width: 112px;
+  height: 64px;
+  min-width: 112px;
+  min-height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background-color: var(--surface);
+}
+
+.hero-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  text-align: center;
+}
+
+.duration {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b0b3b8;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.result {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.result.win {
+  color: #4ade80;
+  background-color: rgba(74, 222, 128, 0.1);
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.4);
+}
+
+.result.lose {
+  color: var(--primary-red);
+  background-color: rgba(239, 68, 68, 0.1);
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+.kda {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.kda span {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.kills {
+  color: #4ade80;
+  margin: 0;
+}
+
+.deaths {
+  color: var(--primary-red);
+  margin: 0;
+}
+
+.assists {
+  color: var(--primary-gold);
+  margin: 0;
+}
+
+.showMore{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: none;
+  font-size: 24px;
+  padding: 12px 8px;
+  border-radius: 4px;
+  background: rgb(49, 28, 28);
+  color: white;
+  border-bottom: 1px solid whitesmoke;
+  transition: 0.5s ease-in-out;
+}
+
+.showMore:hover{
+  background: rgba(83, 49, 49, 0.863);
+  cursor: pointer;
+}
+
+.guide{
+  text-align: center;
+  margin: 5px auto;
+  color: white;
+  opacity: 25%;
+}
